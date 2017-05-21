@@ -31,11 +31,11 @@ Template.canvas.onRendered(function () {
                 canvas.add(object);
             });
         },
-        changed: function () {
+        changed: function (id, changed) {
 
         },
         removed: function () {
-
+            canvas.clear()
         }
     });
 
